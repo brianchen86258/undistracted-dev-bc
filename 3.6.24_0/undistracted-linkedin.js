@@ -125,6 +125,15 @@ function runContentScript() {
       `;
       }
 
+      // Hide My Network
+      if (linkedinSettings.myNetwork && linkedinSettings.myNetwork.value) {
+        css += `
+        [data-sdui-screen="com.linkedin.sdui.flagshipnav.mynetwork.Grow"] {
+          display: none !important;
+        }
+      `;
+      }
+
       // Remove Colors
       if (linkedinSettings.color && linkedinSettings.color.value) {
         css += `

@@ -315,10 +315,16 @@ const allSettings = {
       order: 4,
       type: 'switch',
     },
+    myNetwork: {
+      value: false,
+      description: 'Hide My Network',
+      order: 5,
+      type: 'switch',
+    },
     color: {
       value: false,
       description: 'Remove Colors',
-      order: 5,
+      order: 6,
       type: 'switch',
       paid: true,
     },
