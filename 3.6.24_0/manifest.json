@@ -34,7 +34,8 @@
    }, {
       "js": [ "undistracted-linkedin.js" ],
       "matches": [ "*://*.linkedin.com/*" ],
-      "run_at": "document_start"
+      "run_at": "document_start",
+      "all_frames": true
    } ],
    "content_security_policy": {
       "extension_pages": "default-src 'self'; script-src 'self'; object-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src https://undistracted-server.up.railway.app/"
