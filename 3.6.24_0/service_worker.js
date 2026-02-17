@@ -144,10 +144,16 @@ const allSettings = {
       order: 8,
       type: 'switch',
     },
+    subscriptions: {
+      value: false,
+      description: 'Hide Subscriptions',
+      order: 9,
+      type: 'switch',
+    },
     color: {
       value: false,
       description: 'Remove Colors',
-      order: 9,
+      order: 10,
       type: 'switch',
       paid: true,
     },

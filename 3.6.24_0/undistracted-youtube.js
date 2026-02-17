@@ -190,6 +190,15 @@ function runContentScript() {
       `;
       }
 
+      // Hide Subscriptions
+      if (youtubeSettings.subscriptions && youtubeSettings.subscriptions.value) {
+        css += `
+        [page-subtype="subscriptions"] ytd-rich-grid-renderer #contents {
+          display: none !important;
+        }
+      `;
+      }
+
       // Remove Colors
       if (youtubeSettings.color && youtubeSettings.color.value) {
         css += `
